@@ -1,0 +1,10 @@
+clc;
+clear;
+clear all;
+close all;
+x = imread("cameraman.tif");
+f = imresize(x, [100, 100]);
+f = double(f);
+m = fspecial("log", [100, 100], 30);
+c = f .* m;
+imshow(c, []);

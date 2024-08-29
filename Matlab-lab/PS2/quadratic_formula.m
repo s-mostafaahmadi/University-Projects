@@ -1,0 +1,11 @@
+clc;
+clear;
+clear all;
+a = input("Enter Number one :");
+b = input("Enter Number two :");
+c = input("Enter Number three :");
+d = delta(a, b, c);
+[x1, x2] = get_x(a, b, d);
+disp("Roots are:");
+disp(x1);
+disp(x2);
