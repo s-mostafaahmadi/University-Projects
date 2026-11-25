@@ -1,18 +1,18 @@
 clc;
 clear;
-clear all;
 
-[c] = adder(2, 3);
-disp(c);
+% adder takes two numbers and returns their sum (exercise 1).
+c = adder(2, 3);
+fprintf('adder(2, 3) = %g\n', c);
 
-[c] = mean(1 ,2, 3);
-disp(c);
+% average of three numbers (exercise 1, second part).
+c = mean_of_three(1, 2, 3);
+fprintf('mean_of_three(1, 2, 3) = %g\n', c);
 
-
-function [c] = adder(a, b, d)
-    c = (a + b + d) / 3;
+function c = adder(a, b)
+    c = a + b;
 end
 
-function [c] = mean(a, b, d)
+function c = mean_of_three(a, b, d)
     c = (a + b + d) / 3;
 end
